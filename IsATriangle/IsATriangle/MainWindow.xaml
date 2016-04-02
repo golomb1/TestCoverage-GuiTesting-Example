@@ -1,0 +1,34 @@
+﻿<Window x:Class="IsATriangle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Background="AliceBlue"
+        Title="Is A Triangle" Height="260" Width="525" MinHeight="260" MinWidth="525" MaxHeight="260" MaxWidth="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="FirstSideTb" Margin="40,100,0,0" TextWrapping="Wrap" Text="" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <Label x:Name="FirstSideL" Content="First side:" Margin="40,74,357,0" VerticalAlignment="Top" Height="26"/>
+
+        <TextBox x:Name="SecondSideTb" Margin="203,100,0,0" TextWrapping="Wrap" Text="" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <Label x:Name="SecondSideL" Content="Second side:" HorizontalAlignment="Left" Margin="203,74,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+
+        <TextBox x:Name="ThirdSideTb" Margin="357,100,0,0" TextWrapping="Wrap" Text="" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <Label x:Name="ThirdSideL" Content="Third side:" Margin="357,74,40,0" VerticalAlignment="Top" Height="26"/>
+
+        <TextBox x:Name="Output" Height="23" Margin="40,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="225"/>
+        <Label x:Name="OutputL" Content="Output:" Margin="40,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.272,0.415" HorizontalAlignment="Left" Width="225" Height="26"/>
+
+        <Button x:Name="Check" Content="Calc Triangle Type" Margin="357,147,0,0" VerticalAlignment="Top" Height="46" HorizontalAlignment="Left" Width="120" Click="Check_Click"/>
+        <Label x:Name="Title" FontSize="24" HorizontalAlignment="Left" Margin="40,22,0,0" FontWeight="Bold" VerticalAlignment="Top" Width="437" Height="47">
+            <TextBlock TextDecorations="Underline" FontWeight="Bold">
+                Is A Triangle:
+            </TextBlock>
+        </Label>
+
+
+    </Grid>
+</Window>
