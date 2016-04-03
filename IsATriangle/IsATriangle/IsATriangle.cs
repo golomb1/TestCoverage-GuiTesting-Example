@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace IsATriangle
 {
     public static class IsTriangle
@@ -34,7 +29,7 @@ namespace IsATriangle
                 }
                 else
                 {
-                    return TriangleType.NotTriangle;
+                    return TriangleType.ScaleneTriangle;
                 }
             }
             else
